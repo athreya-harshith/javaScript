@@ -9,8 +9,8 @@
     str.toUpperCase()
     str.toLowerCase()
     str.indexOf('String') // String is a substring
-    returns 2
-    str.lastIndex()
+    returns 2 the first occurance
+    str.lastIndex() check this returns the last occurance 
     str.endsWith()
     str.substring()
     str.includes()
@@ -31,10 +31,25 @@
 
 */
 
-let str = "A String in javaScript"
+let str = "A String in javaScript String"
 console.log(str.slice(2))
-
+console.log(str.lastIndexOf("String"))
 console.log(str.slice(0,8))
 console.log(str.length)
 console.log(str.slice(-10))
 console.log(str.split(' '))
+
+let fr1 = "Orange "
+let fr2 = "Apple"
+
+let html = `Fruit name is ${fr1}
+            <h1>This is Hemanth</h1>
+            <p> The topper of the class</p>
+            `
+document.body.innerHTML=html// this is selecting the body of the html
+/*
+    The `` are called as the template literals 
+    these can be used to have ' " " as a part if the strings
+
+    Interpolation is done using ${variable}
+*/
