@@ -1,0 +1,25 @@
+
+MVC - ARCHITECTURE 
+
+Model: the part of our application that will deal with the database or any data-related functionality.
+
+View: everything the user will see — basically, the pages that we’re going to send to the client.
+
+Controller: the logic of our site, and the glue between models and views. Here we call our models to get the data, then we put that data on our views to be sent to the users.
+
+
+
+
+
+
+
+
+---------------------------- Session ------------------------------
+Uninitialised = false
+It means that Your session is only Stored into your storage, when any of the Property is modified in req.session
+Uninitialised = true
+It means that Your session will be stored into your storage Everytime for request. It will not depend on the modification of req.session.
+resave = true
+It means when the modification is performed on the session it will re write the req.session.cookie object.
+resave = false
+It will not rewrite the req.session.cookie object. the initial req.session.cookie remains as it is.
